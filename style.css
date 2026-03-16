@@ -44,7 +44,7 @@ body {
     z-index: 1;
     background-color: #6b8cff; /* El color azul base del cielo */
     /* Tu imagen de fondo lejano: */
-    background-image: url('assets/nubes.png'); 
+    background-image: url('Assets/nubes.png'); 
     background-repeat: repeat-x; /* Se repite infinitamente en horizontal */
     background-position: 0px bottom; 
     /* Ajusta el tamaño según tu asset, por ejemplo: */
@@ -55,7 +55,7 @@ body {
 #layer-midground {
     z-index: 2; /* Por encima del cielo, por debajo del jugador */
     /* Tu imagen de fondo medio: */
-    background-image: url('assets/montanas.png'); 
+    background-image: url('/Assets/montanas.png'); 
     background-repeat: repeat-x;
     background-position: 0px bottom;
     background-size: auto 50%; /* Que ocupe la mitad inferior, por ejemplo */
