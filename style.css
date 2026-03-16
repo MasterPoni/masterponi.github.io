@@ -130,7 +130,7 @@ body {
     position: absolute;
     width: 32px;
     height: 64px;
-    background-image: url('assets/mario_full.png'); /* Tu nueva imagen */
+    background-image: url('/assets/mario_full.png'); /* Tu nueva imagen */
     background-size: 128px 256px; /* 4 columnas (4x32) y 4 filas (4x64) */
 }
 
