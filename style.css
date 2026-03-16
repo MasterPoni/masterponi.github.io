@@ -42,7 +42,7 @@ body {
 #layer-background {
     z-index: 1;
     background-color: #6b8cff;
-    background-image: url('./Assets/nubes.png');
+    background-image: url('Assets/nubes.png');
     background-repeat: repeat-x;
     background-position: 0px bottom;
     background-size: auto 100%;
@@ -51,7 +51,7 @@ body {
 /* Capa media (Montañas, árboles lejanos, edificios...) */
 #layer-midground {
     z-index: 2;
-    background-image: url('./Assets/montanas.png');
+    background-image: url('Assets/montanas.png');
     background-repeat: repeat-x;
     background-position: 0px bottom;
     background-size: auto 50%;
@@ -90,7 +90,7 @@ body {
     height: var(--tile-size);
     z-index: 1;
 
-    background-image: url('./Assets/1.1.Suelo.png');
+    background-image: url('Assets/1.1.Suelo.png');
     background-repeat: repeat-x;
     background-size: 32px 32px;
 }
@@ -99,7 +99,7 @@ body {
     position: absolute;
     z-index: 5;
 
-    background-image: url('./Assets/1.1.Ladrillos.png');
+    background-image: url('Assets/1.1.Ladrillos.png');
     background-repeat: repeat;
     background-size: 32px 32px;
     background-color: transparent;
@@ -110,7 +110,7 @@ body {
     position: absolute;
     width: 32px;
     height: 64px;
-    background-image: url('./Assets/mario_full.png');
+    background-image: url('Assets/mario_full.png');
     background-size: 128px 256px;
     /* 4 columnas (4x32) y 4 filas (4x64) */
 }
