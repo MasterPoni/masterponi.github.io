@@ -77,7 +77,7 @@ body {
 .bg-wall {
     position: absolute;
     background-color: #2c1a1a; /* Ladrillo muy oscuro/sombra */
-    /* Si tienes imagen: background-image: url('assets/pared_fondo.png'); */
+    /* Si tienes imagen: background-image: url('./Assets/pared_fondo.png'); */
 }
 
 /* El jugador y el suelo van en z-index: 10, así que taparán esto */
@@ -197,7 +197,7 @@ body {
     /* box-sizing: border-box; */
 
     /* OPCIÓN B: USANDO TU ASSET */
-    /* background-image: url('assets/caja.png'); */
+    /* background-image: url('./Assets/caja.png'); */
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
     /* background-color: transparent; */
@@ -213,7 +213,7 @@ body {
     box-sizing: border-box;
     
     /* Si tienes una imagen, descomenta la siguiente línea y pon la ruta: */
-    /* background-image: url('assets/bloque_sorpresa.png'); */
+    /* background-image: url('./Assets/bloque_sorpresa.png'); */
     background-size: 100% 100%;
 }
 
@@ -221,7 +221,7 @@ body {
 .question-block.hit {
     background-color: #808080; /* Se vuelve gris */
     border-color: #555;
-    /* background-image: url('assets/bloque_vacio.png'); */
+    /* background-image: url('./Assets/bloque_vacio.png'); */
 }
 
 /* --- INTERFAZ: DIÁLOGO FLOTANTE --- */
