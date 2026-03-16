@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-wrapper">
+        <main id="game-stage">
+            
+<div id="ui-layer">
+
+            <div id="paper-hud">
+                    <div id="frag-1" class="paper-part"></div> <div id="frag-2" class="paper-part"></div> <div id="frag-3" class="paper-part"></div> <div id="frag-4" class="paper-part"></div> <div id="frag-5" class="paper-part"></div> <div id="frag-6" class="paper-part"></div> <div id="frag-7" class="paper-part"></div> </div> </div>
+
+            <div id="layer-background" class="layer"></div>
+            
+            <div id="layer-midground" class="layer"></div>
+            
+            <div id="layer-scenery" class="layer">
+                <!--Nivel 1. Datos de contacto-->                
+                <div class="bg-wall" style="left: 0px; bottom: 32px; width: 800px; height: 128px; background-image: url('Assets/1.1.Fondo.png'); background-size: 800px 128px;"></div>
+
+                <div class="pillar" style="left: 383px; bottom: 32px; width: 32px; height: 416px;"></div>
+
+                <!--Nivel 2. Estudios-->
+                <div class="bg-wall" style="left: 928px; bottom: 32px; width: 288px; height: 96px;"></div>
+
+                <!--Nivel 3. Experiencia-->
+                <div class="bg-wall" style="left: 1344px; bottom: 256px; width: 32px; height: 64px;"></div>
+                <div class="bg-wall" style="left: 1376px; bottom: 256px; width: 32px; height: 128px;"></div>
+                <div class="bg-wall" style="left: 1408px; bottom: 32px; width: 448px; height: 352px;"></div>
+                <div class="bg-wall" style="left: 1856px; bottom: 32px; width: 192px; height: 160px;"></div>
+
+                <!--Nivel de Meta-->
+                
+            </div>
+            
+            <div id="layer-play" class="layer">
+
+                <div class="pushable" style="left: 448px; bottom: 32px; width: 32px; height: 32px;"></div>
+                <div class="pushable" style="left: 960px; bottom: 32px; width: 32px; height: 32px;"></div>
+                <div class="pushable" style="left: 1664px; bottom: 32px; width: 32px; height: 32px;"></div>
+                
+                <div id="player"></div>
+
+                <!--Nivel 1. Datos de contacto-->
+                <div class="ground type-1" style="left: 0; bottom: 0; width: 704px;"></div>                
+                
+                <div class="platform type-1" style="left: 192px; bottom: 32px; width: 32px; height: 32px;"></div>
+                <div class="platform type-1" style="left: 320px; bottom: 96px; width: 160px; height: 32px;"></div>
+                <div class="transition-block" style="position: absolute; left: 672px; bottom: 32px; width: 64px; height: 128px; background-image: url('Assets/1.1.Suelo.png'); background-size: 32px 32px;"></div>
+                <div class="transition-block" style="position: absolute;left: 736px; bottom: 64px; width: 32px; height: 96px; background-image: url('Assets/1.1.Suelo.png'); background-size: 32px 32px;"></div>
+                <div class="transition-block" style="position: absolute;left: 768px; bottom: 128px; width: 32px; height: 32px; background-image: url('Assets/1.1.Suelo.png'); background-size: 32px 32px;"></div>
+
+                <!--Nivel 2. Estudios-->
+                <div class="ground type-2" style="left: 704px; bottom: 0; width: 704px;"></div>
+
+                <div class="platform type-2" style="left: 896px; bottom: 96px; width: 128px; height: 32px;"></div>
+                <div class="platform type-2" style="left: 1216px; bottom: 32px; width: 64px; height: 128px;"></div>
+                <div class="platform type-2" style="left: 1280px; bottom: 32px; width: 32px; height: 160px;"></div>
+                <div class="platform type-2" style="left: 1312px; bottom: 32px; width: 96px; height: 256px;"></div>
+
+                <!--Nivel 3. Experiencia-->
+                <div class="ground type-3" style="left: 1408px; bottom: 0; width: 704px;"></div>
+
+                <div class="platform type-3" style="left: 1408px; bottom: 32px; width: 64px; height: 256px;"></div>
+                <div class="platform type-3" style="left: 1472px; bottom: 32px; width: 32px; height: 224px;"></div>
+                <div class="platform type-3" style="left: 1504px; bottom: 32px; width: 32px; height: 192px;"></div>
+                <div class="platform type-3" style="left: 1536px; bottom: 32px; width: 64px; height: 160px;"></div>
+                <div class="platform type-3" style="left: 1696px; bottom: 32px; width: 64px; height: 128px;"></div>
+                <div class="platform type-3" style="left: 1760px; bottom: 32px; width: 96px; height: 64px;"></div>
+                <div class="platform type-3" style="left: 1856px; bottom: 32px; width: 256px; height: 32px;"></div>
+                
+                <!--Techo Cueba-->
+                <div class="platform type-3" style="left: 1408px; bottom: 352px; width: 32px; height: 96px;"></div>
+                <div class="platform type-3" style="left: 1440px; bottom: 352px; width: 32px; height: 128px;"></div>
+                <div class="platform type-3" style="left: 1472px; bottom: 352px; width: 32px; height: 160px;"></div>
+                <div class="platform type-3" style="left: 1504px; bottom: 352px; width: 32px; height: 192px;"></div>
+                <div class="platform type-3" style="left: 1536px; bottom: 320px; width: 32px; height: 224px;"></div>
+                <div class="platform type-3" style="left: 1568px; bottom: 256px; width: 32px; height: 320px;"></div>
+                <div class="platform type-3" style="left: 1600px; bottom: 256px; width: 32px; height: 352px;"></div>
+                <div class="platform type-3" style="left: 1632px; bottom: 288px; width: 64px; height: 320px;"></div>
+                <div class="platform type-3" style="left: 1669px; bottom: 288px; width: 32px; height: 320px;"></div>
+                <div class="platform type-3" style="left: 1696px; bottom: 288px; width: 32px; height: 288px;"></div>
+                <div class="platform type-3" style="left: 1728px; bottom: 288px; width: 32px; height: 256px;"></div>
+                <div class="platform type-3" style="left: 1760px; bottom: 256px; width: 32px; height: 224px;"></div>
+                <div class="platform type-3" style="left: 1792px; bottom: 224px; width: 32px; height: 192px;"></div>
+                <div class="platform type-3" style="left: 1824px; bottom: 192px; width: 32px; height: 192px;"></div>
+                <div class="platform type-3" style="left: 1856px; bottom: 160px; width: 32px; height: 160px;"></div>
+                <div class="platform type-3" style="left: 1888px; bottom: 160px; width: 64px; height: 64px;"></div>
+                <div class="platform type-3" style="left: 1952px; bottom: 160px; width: 64px; height: 32px;"></div>
+
+                <!--Nivel de Meta-->
+                <div class="ground type-4" style="left: 2112px; bottom: 0; width: 704px;"></div>
+
+
+
+                <!--Bloques CV-->
+                <div id="dialog-box" style="display: none;"></div>
+                
+                <div class="question-block" data-fragment-id="1" data-dialog-id="texto_cabecera" style="left: 192px; bottom: 160px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="2" data-dialog-id="datos_contactos" style="left: 448px; bottom: 224px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="3" data-dialog-id="estudios" style="left: 928px; bottom: 224px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="4" data-dialog-id="conocimientos" style="left: 1216px; bottom: 256px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="5" data-dialog-id="experiencia_alta" style="left: 1504px; bottom: 320px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="6" data-dialog-id="experiencia_baja" style="left: 1728px; bottom: 256px; width: 32px; height: 32px;"></div>
+                <div class="question-block" data-fragment-id="7" data-dialog-id="otros_datos" style="left: 2016px; bottom: 160px; width: 32px; height: 32px;"></div>
+                
+                <!--Bloqueos de barriles-->
+                <div class="block-barrier" style="left: 384px; bottom: 32px; width: 32px; height: 32px;"></div>
+                <div class="block-barrier" style="left: 800px; bottom: 32px; width: 32px; height: 32px;"></div>
+
+
+                <div id="goal" style="left: 2304px; bottom: 32px; width: 32px; height: 300px;"></div>
+
+            </div>
+            
+        </main>
+    </div>
+    <script src="dialogos.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
